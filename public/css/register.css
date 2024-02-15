@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  padding: 100px;
+  border: 10px solid #ccc;
+  border-radius: 15px;
+}
+
+.image-upload-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+}
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style for the input fields */
+.input-field {
+  width: 48%; /* Adjust the width as needed */
+  margin-right: 2%; /* Add some spacing between input fields */
+}
+
+.registration-form {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border: transparent;
+}
+
+.event-details {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+.event-details h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.event-details img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.event-details p {
+  font-size: 1.5rem;
+}
+
+.registration-form h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registration-form form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.registration-form form input[type="text"],
+.registration-form form input[type="tel"],
+.registration-form form input[type="email"],
+#description,
+.registration-form form select {
+  width: 95%;
+  padding: 10px;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+.registration-form form select {
+  width: 97%;
+}
+
+.registration-form form input[type="submit"] {
+  background-color: #007bff;
+  margin-top: 30px;
+  width: 97%;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registration-form form input[type="submit"]:hover {
+  background-color: #0056b3;
+}

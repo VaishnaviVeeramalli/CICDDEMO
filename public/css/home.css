@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/back_image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  background-color: rgba(
+    7,
+    122,
+    154,
+    0.5
+  ); /* Semi-transparent black background for navbar */
+  padding: 10px 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(179, 163, 163);
+  margin-right: 20px;
+}
+
+.navbar a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.Heading {
+  width: 100%;
+  min-height: 50vh;
+  overflow: hidden;
+  padding: 120px 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #a8e6cf;
+  height: fit-content;
+  text-align: center;
+}
+
+.content p {
+  font-size: 1.8rem;
+  color: #79f7fd;
+  text-align: center;
+}
+
+.get-started-button {
+  background-color: #ffaaa5; /* Blue color for the button */
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.get-started-button:hover {
+  color: white;
+  background-color: #0056b3; /* Darker blue color on hover */
+}

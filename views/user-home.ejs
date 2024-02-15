@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/dahboard.css" />
+    <title>Horizontal Nav Bar</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="#" style="color: white;">Home</a></li>
+        <li><a href="../user-events">My Events</a></li>
+      </ul>
+      <a  href="../logout">
+        <button class="logout-button"  style="color: white;">Logout</button>
+      </a>
+    </nav>
+
+    <hr />
+    <% events.forEach(event => { %> 
+      <div class="event-card">
+        <h2 class="event-title"><%= event.name %></h2>
+        <div class="event-details">
+          <img
+            class="event-photo"
+            src="<%= event.imagePath %>"
+            alt="Event Photo"
+          />
+          <div class="event-info">
+            <p class="event-description"><%= event.description %></p>
+            <p class="event-time">Date & Time: <%= event.eventDateTime %></p> 
+            <div style="display: flex; justify-content: center; align-items: center;">
+              <a href="/register-event/<%= event._id %>"><button class="more-button">Register</button></a><br>  
+            </div>
+          </div>
+        </div>
+      </div>
+    <% }); %>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+/* Reset some default styles for better consistency */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  color: white;
+  border: transparent;
+}
+
+.success-message {
+  color :green; 
+  text-align: center;
+}
+
+/* Style the navigation bar */
+.navbar {
+  height: 5vh;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+}
+
+/* Style the navigation list */
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: rgb(204, 185, 185);
+}
+
+.nav-list li a:hover {
+  color: lightblue;
+}
+/* Style the logout button */
+.logout-button {
+  background-color: #f44336;
+  color: rgb(204, 185, 185);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+  color: white;
+}
+/* ... (previous CSS styles) ... */
+
+/* Style the event card container */
+.event-card {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Background color for the card */
+  margin-bottom: 20px; /* Add margin to separate cards */
+  border-radius: 10px; /* Rounded corners for the card */
+  text-align: center;
+}
+
+.event-card.alt {
+  flex-direction: column-reverse; /* Alternate card placement */
+}
+
+/* Style the event title */
+.event-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Style the event details container */
+.event-details {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center photo and info horizontally */
+  margin-top: 20px; /* Add space between title and details */
+}
+
+/* Style the event photo */
+.event-photo {
+  max-width: calc(100% / 4);
+  margin-left: 20px;
+  margin-right: 50px; /* Add space between photo and info */
+  border-radius: 5px;
+}
+
+/* Style the event info (description, time, price, more button) */
+.event-info {
+  text-align: left; /* Align info text to the left */
+}
+
+.event-description {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.event-time,
+.event-price {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+/* Style the "More" button */
+.more-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.more-button:hover {
+  background-color: #0056b3;
+}
+
+/* Add additional styling as needed */
