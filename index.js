@@ -202,6 +202,6 @@ app.get('/logout', (req, res) =>{
     return res.redirect("/")
 });
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log("server started working on port 3000");
 });
