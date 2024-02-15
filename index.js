@@ -9,7 +9,9 @@ const { error } = require("console");
 var ObjectId = require('mongodb').ObjectId; 
 var Publishable_Key = 'your key'
 var Secret_Key = 'your key'
- 
+const dotenv = require('dotenv') 
+
+dotenv.config()
 const stripe = require('stripe')(Secret_Key)
 
 const app = express();
